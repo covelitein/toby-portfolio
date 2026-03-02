@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Send, Mail, MapPin, Copy, CheckCircle2, ShieldCore } from "lucide-react";
+import { Send, Mail, MapPin, Copy, CheckCircle2, ShieldCheck } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { personalInfo } from "@/data/mock";
 
@@ -132,7 +132,7 @@ const Contact = () => {
                   <div className="p-4 bg-[#111] border border-[#222] rounded-xl">
                     <div className="flex flex-col gap-3">
                       <div className="flex items-center gap-3 text-cyan-500">
-                        <ShieldCore className="w-5 h-5" />
+                        <ShieldCheck className="w-5 h-5" />
                         <span className="font-medium text-sm">PGP Fingerprint</span>
                       </div>
                       <code className="text-xs text-gray-500 font-mono break-all bg-[#0a0a0a] p-3 rounded-lg border border-[#1a1a1a]">
