@@ -24,11 +24,11 @@ export default function Home() {
     setPrefersReducedMotion(mediaQuery.matches);
 
     // Setup command palette keyboard shortcut
-    const handleKeyDown = (e) => {
+    const handleKeyDown = (e: KeyboardEvent) => {
       // Cmd+K or Ctrl+K
       if ((e.metaKey || e.ctrlKey) && e.key === "k") {
         e.preventDefault();
-        setIsCommandPaletteOpen((prev) => !prev);
+        setIsCommandPaletteOpen((prev: boolean) => !prev);
       }
     };
 
